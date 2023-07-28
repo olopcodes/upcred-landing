@@ -1,0 +1,21 @@
+// variables
+$color-accent: #f9a826;
+$color-accent--light: #f5c67b;
+$color-dark: #323232;
+$color-gray: #686868;
+$color-gray-light: #dccbcb;
+$color-white-off: #f7f4f4;
+$color-white: #fafafa;
+
+$font-heading: "";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $dark;
+  color: $white;
+}
