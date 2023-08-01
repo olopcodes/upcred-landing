@@ -1,21 +1,161 @@
-// variables
-$color-accent: #f9a826;
-$color-accent--light: #f5c67b;
-$color-dark: #323232;
-$color-gray: #686868;
-$color-gray-light: #dccbcb;
-$color-white-off: #f7f4f4;
-$color-white: #fafafa;
+// can not use @use with this sass
+@import "variables";
+@import "mixins";
+@import "buttons";
+@import "header";
+@import "nav";
+@import "hero";
+@import "benefits";
+@import "subscribe";
+@import "reviews";
+@import "signup";
+@import "footer";
 
-$font-heading: "";
-
+// general styles
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+html {
+  font-size: $font-size;
+}
+
 body {
-  background-color: $dark;
-  color: $white;
+  background-color: $color-dark;
+  color: $color-white;
+  font-family: $font-default;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin-bottom: $spacing-med;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: $spacing-reg;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: $max-width;
+}
+
+section,
+aside {
+  padding: $spacing-lg 0;
+}
+
+.logo {
+  font-size: 1.25rem;
+  display: block;
+  display: flex;
+  align-items: center;
+  color: $color-accent;
+  text-decoration: none;
+  font-weight: 700;
+  img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+.menu {
+  height: 3rem;
+
+  cursor: pointer;
+  width: 2.25rem;
+  position: relative;
+
+  > * {
+    height: 3px;
+    width: 100%;
+    background-color: $color-white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  &__line:first-of-type {
+    top: 40%;
+  }
+
+  &__line:last-of-type {
+    top: 60%;
+  }
+}
+
+.heading {
+  &--primary {
+    font-size: $font-size-heading--primary;
+  }
+
+  &--secondary {
+    font-size: $font-size-heading--secondary;
+  }
+
+  &--third {
+    font-size: $font-size-heading--third;
+  }
+
+  &--fourth {
+    font-size: $font-size-heading--fourth;
+  }
+
+  &--subtitle {
+    font-size: $font-size-heading--subtitle;
+    color: $color-accent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  padding: $spacing-reg $spacing-med;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transform: all 0.3s ease;
+  margin-right: $spacing-sm;
+  &--cta {
+    @extend .btn;
+    background-color: $color-accent;
+
+    &:hover {
+      background-color: $color-accent--light;
+    }
+  }
+
+  &--off {
+    @extend .btn;
+    background-color: transparent;
+    color: $color-white;
+    border: 1.5px solid;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
 }

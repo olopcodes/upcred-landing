@@ -3,39 +3,223 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>upCred | The All-purpose Credit Card</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&family=Inter:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;700&family=Roboto:wght@300;400&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo header__logo">
+          <img src="./images/logo.svg" alt="logo" />
+          <p>upCred</p>
+        </a>
+
+        <div class="menu">
+          <div class="menu__line"></div>
+          <div class="menu__line"></div>
+        </div>
+
+        <nav class="header__nav-desktop">
+          <ul class="header__desktop-list">
+            <li>
+              <a href="#">Why us</a>
+            </li>
+
+            <li>
+              <a href="#">testimonials</a>
+            </li>
+          </ul>
+
+          <div class="header__nav-buttons">
+            <button>login</button>
+            <button>signup</button>
+          </div>
+        </nav>
+
+        <nav class="header__nav-mobile">
+          <ul class="header__mobile-list">
+            <li>
+              <a href="#">Why us</a>
+            </li>
+
+            <li>
+              <a href="#">testimonials</a>
+            </li>
+          </ul>
+
+          <div class="header__nav-buttons">
+            <button class="btn">login</button>
+            <button class="btn">signup</button>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero">
-        <div class="hero__left"></div>
-        <div class="hero__right"></div>
+        <div class="container">
+          <div class="hero__left">
+            <p class="heading--subtitle">smart money moves</p>
+            <h1 class="heading--primary">
+              It's a credit card, with none of the hassle and all the rewards
+            </h1>
+            <p class="text--default">
+              We take the anxiety of owning a credit card away. No of those
+              exorbitant fees attached and a tons of perks. We help you get s
+              strong financial footing and grow your wealth. We go your back!
+            </p>
+            <button class="btn btn--off">learn more</button>
+            <button class="btn btn--cta">subscribe</button>
+          </div>
+          <div class="hero__right">
+            <img src="./images/hero.svg" alt="credit card payment" />
+          </div>
+        </div>
       </section>
 
       <section class="benefits">
-        <div class="benefits__card"></div>
-        <div class="benefits__card"></div>
-        <div class="benefits__card"></div>
+        <div class="container">
+          <h2 class="heading--secondary">Reasons why we are different</h2>
+
+          <div class="benefits__cards">
+            <div class="benefits__card">
+              <img src="./images/finance.svg" alt="personal banking" />
+              <h3 class="heading--third">All around financial prowess</h3>
+              <p class="text--default">
+                All of your accounts, under one roof, with the guidance of our
+                experts to help you grow your money
+              </p>
+            </div>
+
+            <div class="benefits__card">
+              <img src="./images/secure.svg" alt="lock" />
+              <h3 class="heading-third">Secure on lock</h3>
+              <p class="text--default">
+                State of the art encryption and security. We value our clients
+                information and do not sell them to third-parties ever
+              </p>
+            </div>
+            <div class="benefits__card">
+              <img src="./images/tranfer.svg" alt="credit card" />
+              <h3 class="heading--third">Move your money at ease</h3>
+              <p class="text--default">
+                Our system allows for easy and fast transfer to banks,
+                companies, and friends. Sent the money to the wrong person, do
+                not worry, we can help
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="subscribe"></section>
+      <aside class="subscribe bg--accent">
+        <div class="container">
+          <h2 class="heading--secondary">
+            Interested and want to keep updated on happening on upCred. Also, to
+            receive exclusive deals. Sign up to our newsletter
+          </h2>
+          <button class="btn--cta">sign up now</button>
+        </div>
+      </aside>
 
       <section class="testimonials">
-        <div class="testimonials__card"></div>
-        <div class="testimonials__card"></div>
-        <div class="testimonials__card"></div>
+        <div class="container">
+          <div class="testimonials__card">
+            <p class="text--default">
+              Thanks to credUp, I have been able to make strides in my financial
+              goals! The company has far exceeded my expectations!
+            </p>
+            <h4 class="heading-fourth">Alan Wireds</h4>
+          </div>
+          <div class="testimonials__card">
+            <p class="text--default">
+              The application is smooth and esy to use. First time writing a
+              review, but this is worth it
+            </p>
+            <h4 class="heading--fourth">Janet Roaker</h4>
+          </div>
+          <div class="testimonials__card">
+            <p class="text--default">
+              It has been a pleasure using this card. Definitely not like other
+              corporations and the security system is top
+            </p>
+            <h4 class="heading-fourth">Mel hooks</h4>
+          </div>
+        </div>
       </section>
 
-      <section class="signup"></section>
+      <section class="signup bg--accent">
+        <div class="container">
+          <div class="signup__left">
+            <img src="./images/signup.svg" alt="credit card" />
+          </div>
+          <div class="signup__right">
+            <h2>The step to financial freedom starts with us</h2>
+            <p>Join the millions of people who have signed up</p>
+            <button class="btn">join now</button>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li>
+              <a href="#">Why us</a>
+            </li>
+
+            <li>
+              <a href="#">testimonials</a>
+            </li>
+
+            <li>
+              <a href="#">join us</a>
+            </li>
+
+            <li>
+              <a href="#">terms</a>
+            </li>
+
+            <li>
+              <a href="#">terms</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer__company">
+          <a href="#" class="logo">
+            <img src="./images/logo.svg" alt="logo" />
+            <p>upCred</p>
+          </a>
+          <div>
+            <a class="footer__link" href="mailto:support@upcred.com"
+              >support@upcred.com</a
+            >
+            <a class="footer__link" href="tel:+18005550001">1800-555-0001</a>
+
+            <div class="footer__socials">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,12 @@
+.hero {
+  &__left {
+    margin-bottom: $spacing-xl;
+  }
+
+  &__right {
+    height: 15rem;
+    img {
+      height: 100%;
+    }
+  }
+}

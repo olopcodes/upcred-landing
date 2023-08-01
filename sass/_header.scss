@@ -1,0 +1,14 @@
+.header {
+  padding: $spacing-reg 0;
+  //   border-bottom: 1px solid rgba($color-white, 0.8);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    display: none;
+  }
+}
