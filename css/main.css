@@ -60,15 +60,14 @@ aside {
 
 .logo {
   font-size: 1.25rem;
-  display: block;
   display: flex;
   align-items: center;
   color: #f9a826;
   text-decoration: none;
   font-weight: 700; }
-  .logo img {
-    width: 1rem;
-    height: 1rem; }
+  .logo p {
+    margin-bottom: 0;
+    margin-left: 0.25rem; }
 
 .menu {
   height: 3rem;
