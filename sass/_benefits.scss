@@ -1,0 +1,23 @@
+.benefits {
+  text-align: center;
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-dark-light;
+    padding: $spacing-med;
+    gap: $spacing-reg;
+    margin-bottom: $spacing-lg;
+  }
+
+  img {
+    width: 7rem;
+  }
+
+  .heading--third {
+    color: $color-accent;
+    margin-bottom: 0;
+  }
+}

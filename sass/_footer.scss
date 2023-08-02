@@ -1,0 +1,24 @@
+.footer {
+  padding: $spacing-lg 0 $spacing-reg;
+
+  &__link {
+    display: block;
+    color: $color-white;
+    margin-bottom: $spacing-sm;
+  }
+
+  &__socials a {
+    color: $color-white;
+    margin-right: $spacing-sm;
+  }
+}
+
+small {
+  background-color: $color-accent;
+  text-align: center;
+  color: $color-dark;
+  display: block;
+  margin-top: $spacing-lg;
+  padding: $spacing-sm;
+  font-weight: 700;
+}

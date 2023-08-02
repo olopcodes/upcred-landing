@@ -1,6 +1,10 @@
 .hero {
   &__left {
     margin-bottom: $spacing-xl;
+
+    .text--default {
+      margin-bottom: $spacing-lg;
+    }
   }
 
   &__right {

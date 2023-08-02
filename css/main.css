@@ -9,11 +9,67 @@
 
 .hero__left {
   margin-bottom: 6rem; }
+  .hero__left .text--default {
+    margin-bottom: 3rem; }
 
 .hero__right {
   height: 15rem; }
   .hero__right img {
     height: 100%; }
+
+.benefits {
+  text-align: center; }
+  .benefits__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3d3838;
+    padding: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 3rem; }
+  .benefits img {
+    width: 7rem; }
+  .benefits .heading--third {
+    color: #f9a826;
+    margin-bottom: 0; }
+
+.subscribe .heading--secondary {
+  color: #323232; }
+
+.testimonials__card {
+  background-color: #3d3838;
+  padding: 1.5rem;
+  margin-bottom: 3rem; }
+
+.testimonials .heading--fourth {
+  color: #f9a826; }
+
+.signup__left img {
+  margin-bottom: 1.5rem; }
+
+.signup__right .heading--secondary {
+  margin-bottom: 1rem;
+  color: #323232; }
+
+.footer {
+  padding: 3rem 0 1rem; }
+  .footer__link {
+    display: block;
+    color: #fafafa;
+    margin-bottom: 0.5rem; }
+  .footer__socials a {
+    color: #fafafa;
+    margin-right: 0.5rem; }
+
+small {
+  background-color: #f9a826;
+  text-align: center;
+  color: #323232;
+  display: block;
+  margin-top: 3rem;
+  padding: 0.5rem;
+  font-weight: 700; }
 
 * {
   box-sizing: border-box;
@@ -48,6 +104,14 @@ img {
 
 ul {
   list-style: none; }
+
+ul li {
+  margin-bottom: 0.5rem; }
+
+ul a {
+  color: #fafafa;
+  text-decoration: none;
+  text-transform: capitalize; }
 
 .container {
   width: 92%;
@@ -97,7 +161,7 @@ aside {
   font-size: 1.5rem; }
 
 .heading--fourth {
-  font-size: 1.25rem; }
+  font-size: 0.85rem; }
 
 .heading--subtitle {
   font-size: 1rem;
@@ -125,3 +189,7 @@ aside {
     border: 1.5px solid; }
     .btn--off:hover {
       opacity: 0.85; }
+
+.bg--accent {
+  background-color: #f9a826;
+  text-align: center; }

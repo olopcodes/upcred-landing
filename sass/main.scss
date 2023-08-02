@@ -7,7 +7,7 @@
 @import "hero";
 @import "benefits";
 @import "subscribe";
-@import "reviews";
+@import "testimonials";
 @import "signup";
 @import "footer";
 
@@ -51,6 +51,16 @@ img {
 
 ul {
   list-style: none;
+}
+
+ul li {
+  margin-bottom: $spacing-sm;
+}
+
+ul a {
+  color: $color-white;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .container {
@@ -103,6 +113,7 @@ aside {
   }
 }
 
+// text
 .heading {
   &--primary {
     font-size: $font-size-heading--primary;
@@ -128,6 +139,7 @@ aside {
   }
 }
 
+// components
 .btn {
   cursor: pointer;
   padding: $spacing-reg $spacing-med;
@@ -157,4 +169,10 @@ aside {
       opacity: 0.85;
     }
   }
+}
+
+// utils
+.bg--accent {
+  background-color: $color-accent;
+  text-align: center;
 }

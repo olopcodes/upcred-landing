@@ -1,0 +1,14 @@
+.signup {
+  &__left {
+    img {
+      margin-bottom: $spacing-med;
+    }
+  }
+
+  &__right {
+    .heading--secondary {
+      margin-bottom: $spacing-reg;
+      color: $color-dark;
+    }
+  }
+}

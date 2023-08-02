@@ -1,0 +1,11 @@
+.testimonials {
+  &__card {
+    background-color: $color-dark-light;
+    padding: $spacing-med;
+    margin-bottom: $spacing-lg;
+  }
+
+  .heading--fourth {
+    color: $color-accent;
+  }
+}
