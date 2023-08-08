@@ -11,6 +11,21 @@
     color: $color-white;
     margin-right: $spacing-sm;
   }
+
+  .container {
+    @include mediaDevices(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  nav ul {
+    @include mediaDevices(tablet) {
+      display: flex;
+      gap: $spacing-reg;
+    }
+  }
 }
 
 small {
@@ -21,4 +36,5 @@ small {
   margin-top: $spacing-lg;
   padding: $spacing-sm;
   font-weight: 700;
+  font-size: 0.75rem;
 }

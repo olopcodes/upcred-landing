@@ -1,16 +1,29 @@
 .hero {
   &__left {
     margin-bottom: $spacing-xl;
-
+    max-width: 35em;
     .text--default {
       margin-bottom: $spacing-lg;
+    }
+
+    @include mediaDevices(laptop) {
+      margin-bottom: 0;
     }
   }
 
   &__right {
-    height: 15rem;
-    img {
-      height: 100%;
+  }
+
+  .container {
+    @include mediaDevices(laptop) {
+      display: flex;
+      gap: $spacing-lg;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    @include mediaDevices(desktop) {
+      gap: $spacing-xl;
     }
   }
 }

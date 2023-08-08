@@ -8,7 +8,32 @@
     align-items: center;
   }
 
-  nav {
+  &__nav-desktop,
+  &__nav-mobile {
     display: none;
+  }
+
+  &__nav-desktop {
+    @include mediaDevices(tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-basis: 85%;
+
+      ul {
+        display: flex;
+        gap: $spacing-reg;
+        align-items: center;
+      }
+    }
+  }
+
+  button {
+    padding: $spacing-sm;
+    font-size: 0.85rem;
+
+    @include mediaDevices(desktop) {
+      padding: $spacing-reg;
+    }
   }
 }

@@ -1,0 +1,31 @@
+// components
+.btn {
+  cursor: pointer;
+  padding: $spacing-reg;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  transform: all 0.3s ease;
+  margin-right: $spacing-sm;
+  &--cta {
+    @extend .btn;
+    background-color: $color-accent;
+
+    &:hover {
+      background-color: $color-accent--light;
+    }
+  }
+
+  &--off {
+    @extend .btn;
+    background-color: transparent;
+    color: $color-white;
+    border: 1.5px solid;
+
+    &:hover {
+      opacity: 0.85;
+    }
+  }
+}

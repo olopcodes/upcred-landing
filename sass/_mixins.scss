@@ -1,0 +1,31 @@
+// $media-small: 48em;
+// $media-tablet: 62em;
+// $media-desktop: 75em;
+
+@mixin mediaDevices($breakpoint) {
+  //the name of the mixin is devices
+
+  @if $breakpoint == mobile {
+    @media only screen and (min-width: $media-mobile) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tablet {
+    @media only screen and (min-width: $media-tablet) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == laptop {
+    @media only screen and (min-width: $media-laptop) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: $media-desktop) {
+      @content;
+    }
+  }
+}

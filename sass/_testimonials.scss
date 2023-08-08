@@ -8,4 +8,13 @@
   .heading--fourth {
     color: $color-accent;
   }
+
+  &__cards {
+    @include mediaDevices(tablet) {
+      display: flex;
+      gap: $spacing-lg;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
 }

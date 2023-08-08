@@ -20,4 +20,14 @@
     color: $color-accent;
     margin-bottom: 0;
   }
+
+  &__cards {
+    @include mediaDevices(tablet) {
+      margin-top: $spacing-xl;
+      display: flex;
+      gap: $spacing-reg;
+      justify-content: space-between;
+      // align-items: center;
+    }
+  }
 }
